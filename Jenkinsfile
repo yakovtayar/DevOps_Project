@@ -6,9 +6,9 @@ agent any
 		git 'https://github.com/yakovtayar/DevOps_Project.git'
                 }
             }
-        }stage('run_file'){
+        stage('run_file'){
             steps{
                 sh 'pipeline_testing.py'
             }
-        }
+    }
 }

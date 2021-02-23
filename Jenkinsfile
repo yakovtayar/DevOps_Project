@@ -11,5 +11,4 @@ agent any
                 sh 'pipeline_testing.py'
             }
         }
-    }
 }

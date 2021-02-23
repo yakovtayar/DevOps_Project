@@ -10,9 +10,9 @@ pipeline {
             steps {
                 script {
                     if (Boolean.valueOf(env.UNIX)) {
-                        sh 'pipeline_testing.py'
+                        sh 'rest_app.py'
                     } else {
-                        bat 'pipeline_testing.py'
+                        bat 'rest_app.py'
                     }
                 }
             }

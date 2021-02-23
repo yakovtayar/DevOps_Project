@@ -3,9 +3,6 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                script {
-                    properties([pipelineTriggers([pollSCM('* * * * *')])])
-                }
                 git 'https://github.com/yakovtayar/DevOps_Project.git'
             }
         }

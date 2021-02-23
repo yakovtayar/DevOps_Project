@@ -3,7 +3,7 @@ agent any
     stages{
         stage('rest_app'){
             steps{
-                    sh 'pipeline_testing.pyy'
+                    sh 'pipeline_testing.py'
                 }
             }
         }

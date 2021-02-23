@@ -1,10 +1,14 @@
 pipeline{
 agent any
     stages{
-        stage('rest_app'){
+        stage('initial'){
             steps{
-                    sh 'pipeline_testing.py'
+                    git 'https://github.com/yakovtayar/DevOps_Project.git'
                 }
             }
-        }
+        }stage('run_file'){
+            steps{
+                    sh 'pipeline_testing.py'
+                }   
+            }
     }

@@ -3,7 +3,7 @@ agent any
     stages{
         stage('initial'){
             steps{
-					git 'https://github.com/yakovtayar/DevOps_Project.git'
+		git 'https://github.com/yakovtayar/DevOps_Project.git'
                 }
             }
         }stage('run_file'){

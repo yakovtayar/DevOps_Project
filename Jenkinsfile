@@ -13,7 +13,7 @@ pipeline {
           if (Boolean.valueOf(env.UNIX)) {
             sh 'rest_app.py'
           } else {
-            bat 'start /min python rest_app.py'
+            bat 'rest_app.py'
           }
         }
 
@@ -26,7 +26,7 @@ pipeline {
           if (Boolean.valueOf(env.UNIX)) {
             sh 'web_app.py'
           } else {
-            bat 'start /min python web_app.py'
+            bat 'web_app.py'
           }
         }
 

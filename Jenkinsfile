@@ -11,9 +11,9 @@ pipeline {
       steps {
         script {
           if (Boolean.valueOf(env.UNIX)) {
-            sh 'rest_app.py'
+            sh 'start /min python rest_app.py'
           } else {
-            bat 'rest_app.py'
+            bat 'start /min python rest_app.py'
           }
         }
 
@@ -24,9 +24,9 @@ pipeline {
       steps {
         script {
           if (Boolean.valueOf(env.UNIX)) {
-            sh 'web_app.py'
+            sh 'start /min python web_app.py'
           } else {
-            bat 'web_app.py'
+            bat 'start /min python web_app.py'
           }
         }
 
